@@ -76,5 +76,19 @@ class MutasiController extends Controller
         // alihkan halaman ke halaman mutasi
         return redirect('/mutasi');
     }
+    public function cari(Request $request)
+	{
+		// menangkap data pencarian
+		$cari = $request->cari;
 
+    		// mengambil data dari table tas sesuai pencarian data
+		$mutasi = DB::table('mutasi')
+		->where('Departemen','like',"%".$cari."%")
+        ->orWhere('SubDepartemen','like',"%".$cari."%")
+		->paginate();
+
+    		// mengirim data mutasi ke view index
+		return view('mutasi.index',['mutasi' => $mutasi]);
+
+	}
 }

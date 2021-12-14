@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html>
+@extends('layout.ceria')
+@section('title', 'Data Mutasi')
+@section('isikonten')
+@section('judulhalaman', 'TAMBAH DATA MUTASI')
 <head>
-	<title>Tugas PWB Query Builder</title>
 </head>
 <body>
-
-	<h3>Data Mutasi</h3>
-
 	<a href="/mutasi"> Kembali</a>
 
 	<br/>
@@ -22,4 +20,4 @@
 	</form>
 
 </body>
-</html>
+@endsection

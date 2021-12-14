@@ -1,19 +1,27 @@
-<!DOCTYPE html>
-<html>
+@extends('layout.ceria')
+@section('title', 'Data Mutasi')
+@section('isikonten')
+@section('judulhalaman', 'DATA MUTASI')
+
 <head>
-	<title>Tugas PWB Query Builder</title>
 </head>
 <body>
 
 
-	<h3>Data Mutasi</h3>
 
-	<a href="/mutasi/tambah"> + Tambah Mutasi Baru</a>
+	<a href="/mutasi/tambah" class="btn btn-primary"> + Tambah Mutasi Baru</a>
 
 	<br/>
 	<br/>
-
-	<table border="1">
+    <div class="container" align='center'>
+        <p>Cari Data Pegawai berdasarkan Nama :</p>
+        <form action="/pegawai/cari" method="GET">
+            <input type="text" class="form-control" name="cari" placeholder="Cari Pegawai .." value="{{ old('cari') }}">
+            <input type="submit" class="form-control btn-warning" value="CARI">
+        </form>
+    </div>
+    <br>
+	<table class="table table-success table-striped">
 		<tr>
 			<th>ID Pegawai</th>
 			<th>Departemen</th>
@@ -28,14 +36,15 @@
 			<td>{{ $m->SubDepartemen }}</td>
 			<td>{{ $m->MulaiBertugas }}</td>
 			<td>
-				<a href="/mutasi/edit/{{ $m->ID }}">Edit</a>
+                <a href="/mutasi/detail/{{ $m->ID }}" class="btn btn-success" role="button">View</a>
+                |
+				<a href="/mutasi/edit/{{ $m->ID }}" class="btn btn-warning" >Edit</a>
 				|
-				<a href="/mutasi/hapus/{{ $m->ID }}">Hapus</a>
+				<a href="/mutasi/hapus/{{ $m->ID }}" class="btn btn-danger">Hapus</a>
 			</td>
 		</tr>
 		@endforeach
 	</table>
 
-
 </body>
-</html>
+@endsection

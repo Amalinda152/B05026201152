@@ -1,15 +1,11 @@
 @extends('layout.ceria')
 @section('title', 'Data Mutasi')
 @section('isikonten')
-@section('judulhalaman', 'EDIT DATA MUTASI')
+@section('judulhalaman', 'DETAIL DATA MUTASI')
 
 <head>
 </head>
 <body>
-
-
-	<h3>Edit Mutasi</h3>
-
 	<a href="/mutasi"> Kembali</a>
 
 	<br/>
