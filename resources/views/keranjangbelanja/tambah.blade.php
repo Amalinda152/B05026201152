@@ -41,16 +41,16 @@
         <div class="row mt-4">
             <label for="nama" class="col-md-1 col-sm-2 control-label">Jumlah pembelian</label>
             <div class="col-1">:</div>
-            <div class="col-md-3 col-sm-7" id="jumlah">
-                <input type="number" name="jumlah" required="required"> <br/>
+            <div class="col-md-3 col-sm-7" id="Jumlah">
+                <input type="number" name="Jumlah" required="required"> <br/>
                 <label class="col-md-2 col-sm-4 control label"></label>
             </div>
         </div>
         <div class="row mt-4">
             <label for="nama" class="col-md-1 col-sm-2 control-label">Harga per item</label>
             <div class="col-1">:</div>
-            <div class="col-md-3 col-sm-7" id="harga">
-                <input type="number" class="uang" name="harga" required="required"> <br/>
+            <div class="col-md-3 col-sm-7" id="Harga">
+                <input type="number" class="uang" name="Harga" required="required"> <br/>
                 <label class="col-md-2 col-sm-4 control label"></label>
             </div>
         </div>
