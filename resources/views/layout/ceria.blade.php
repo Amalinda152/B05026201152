@@ -120,6 +120,7 @@
         <a href="/absen">Absen</a><hr>
         <a href="/mutasi">Mutasi</a><hr>
         <a href="/tas">Tas</a><hr>
+        <a href="/keranjangbelanja">Keranjang Belanja</a><hr>
         </div>
     </div>
 

@@ -64,3 +64,12 @@ Route::post('/tas/update','TasController@update');
 Route::get('/tas/hapus/{kodetas}','TasController@hapus');
 Route::get('/tas/cari','TasController@cari');
 Route::get('/tas/detail/{kodetas}','TasController@view');
+
+Route::get('/keranjangbelanja','KeranjangBelanjaController@index');
+Route::get('/keranjangbelanja/tambah','KeranjangBelanjaController@tambah');
+Route::post('/keranjangbelanja/store','KeranjangBelanjaController@store');
+Route::get('/keranjangbelanja/edit/{id}','KeranjangBelanjaController@edit');
+Route::post('/keranjangbelanja/update','KeranjangBelanjaController@update');
+Route::get('/keranjangbelanja/hapus/{id}','KeranjangBelanjaController@hapus');
+Route::get('/keranjangbelanja/cari','KeranjangBelanjaController@cari');
+Route::get('/keranjangbelanja/detail/{id}','KeranjangBelanjaController@view');
